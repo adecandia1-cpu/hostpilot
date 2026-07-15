@@ -1,3 +1,4 @@
+
 export default function GuidaPage() {
   return (
     <main className="min-h-screen bg-[#f7f4ee] px-6 py-16 text-[#203434]">
@@ -30,11 +31,15 @@ export default function GuidaPage() {
             className="mt-3 w-full rounded-2xl border border-[#c9c3b8] px-4 py-3 outline-none focus:border-[#356f70]"
           />
 
-          <button className="mt-6 rounded-full bg-[#356f70] px-6 py-3 font-semibold text-white">
-            Continua
-          </button>
+          <a
+  href="/checklist"
+  className="mt-6 inline-block rounded-full bg-[#356f70] px-6 py-3 font-semibold text-white">
+
+  Continua
+</a>
+            
         </div>
       </div>
     </main>
-  );
+    );
 }
