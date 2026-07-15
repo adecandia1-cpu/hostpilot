@@ -1,3 +1,4 @@
+import Link from "next/link";
 const features = [
   {
     icon: "🧭",
@@ -65,9 +66,12 @@ export default function Home() {
             Inizia gratis
           </button>
 
-          <button className="rounded-full border border-[#c9c3b8] bg-white px-7 py-4 font-semibold transition hover:bg-[#eee9df]">
-            Scopri come funziona
-          </button>
+          <Link
+  href="/guida"
+  className="rounded-full border border-[#c9c3b8] bg-white px-7 py-4 font-semibold transition hover:bg-[#feee9d]"
+>
+  Scopri come funziona
+</Link>
         </div>
       </section>
 
