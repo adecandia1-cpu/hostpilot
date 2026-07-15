@@ -75,6 +75,7 @@ export default function Home() {
         {features.map((feature) => (
           <article
             key={feature.title}
+          
             className="rounded-3xl border border-[#ded8cd] bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
           >
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#dceceb] text-xl">
@@ -89,7 +90,76 @@ export default function Home() {
           </article>
         ))}
       </section>
+<section className="mx-auto max-w-6xl px-6 pb-24">
+  <div className="mb-10 text-center">
+    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#356f70]">
+      Tutto in un unico posto
+    </p>
 
+    <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+      Dalla normativa alla gestione quotidiana
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl leading-7 text-[#667575]">
+      HostPilot raccoglie le informazioni essenziali e ti mostra sempre il
+      prossimo passo da compiere.
+    </p>
+  </div>
+
+  <div className="grid gap-5 md:grid-cols-3">
+    <article className="rounded-3xl border border-[#ded8cd] bg-white p-7 shadow-sm cursor-pointer hover:shadow-lg transition">
+      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#dceceb] text-xl font-semibold text-[#356f70]">
+        N
+      </div>
+
+      <h3 className="text-xl font-semibold">Normativa guidata</h3>
+
+      <p className="mt-3 leading-7 text-[#667575]">
+        Scopri quali pratiche possono essere necessarie in base alla Regione,
+        al Comune e al tipo di struttura.
+      </p>
+
+      <p className="mt-5 text-sm font-semibold text-[#356f70]">
+        Con fonti ufficiali e data di verifica
+      </p>
+    </article>
+
+    <article className="rounded-3xl border border-[#ded8cd] bg-white p-7 shadow-sm">
+      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#dceceb] text-xl font-semibold text-[#356f70]">
+        AI
+      </div>
+
+      <h3 className="text-xl font-semibold">Assistente semplice</h3>
+
+      <p className="mt-3 leading-7 text-[#667575]">
+        Fai domande su CIN, SUAP, tassa di soggiorno, ospiti e gestione. Ricevi
+        spiegazioni chiare, senza linguaggio burocratico.
+      </p>
+
+      <p className="mt-5 text-sm font-semibold text-[#356f70]">
+        Risposte da controllare sulla fonte
+      </p>
+    </article>
+
+    <article className="rounded-3xl border border-[#ded8cd] bg-white p-7 shadow-sm">
+      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#dceceb] text-xl font-semibold text-[#356f70]">
+        ✓
+      </div>
+
+      <h3 className="text-xl font-semibold">Checklist e scadenze</h3>
+
+      <p className="mt-3 leading-7 text-[#667575]">
+        Tieni sotto controllo ciò che hai completato, quello che manca e le
+        attività da svolgere nei prossimi giorni.
+      </p>
+
+      <p className="mt-5 text-sm font-semibold text-[#356f70]">
+        Un passo alla volta, senza dimenticare nulla
+      </p>
+    </article>
+  </div>
+</section>
+      
       <footer className="border-t border-[#ded8cd] px-6 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-[#667575] sm:flex-row sm:items-center sm:justify-between">
           <span>© 2026 HostPilot</span>
